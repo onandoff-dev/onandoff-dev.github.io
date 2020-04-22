@@ -415,7 +415,7 @@ ul {
  */
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -1155,6 +1155,10 @@ video {
   border-color: #fff;
 }
 
+.divide-onandoffSelection > :not(template) ~ :not(template) {
+  border-color: #85f7da;
+}
+
 .divide-gray-100 > :not(template) ~ :not(template) {
   border-color: #f7fafc;
 }
@@ -1595,6 +1599,10 @@ video {
   background-color: #fff;
 }
 
+.bg-onandoffSelection {
+  background-color: #85f7da;
+}
+
 .bg-gray-100 {
   background-color: #f7fafc;
 }
@@ -1971,6 +1979,10 @@ video {
   background-color: #fff;
 }
 
+.hover\:bg-onandoffSelection:hover {
+  background-color: #85f7da;
+}
+
 .hover\:bg-gray-100:hover {
   background-color: #f7fafc;
 }
@@ -2345,6 +2357,10 @@ video {
 
 .focus\:bg-white:focus {
   background-color: #fff;
+}
+
+.focus\:bg-onandoffSelection:focus {
+  background-color: #85f7da;
 }
 
 .focus\:bg-gray-100:focus {
@@ -2803,6 +2819,10 @@ video {
   border-color: #fff;
 }
 
+.border-onandoffSelection {
+  border-color: #85f7da;
+}
+
 .border-gray-100 {
   border-color: #f7fafc;
 }
@@ -3179,6 +3199,10 @@ video {
   border-color: #fff;
 }
 
+.hover\:border-onandoffSelection:hover {
+  border-color: #85f7da;
+}
+
 .hover\:border-gray-100:hover {
   border-color: #f7fafc;
 }
@@ -3553,6 +3577,10 @@ video {
 
 .focus\:border-white:focus {
   border-color: #fff;
+}
+
+.focus\:border-onandoffSelection:focus {
+  border-color: #85f7da;
 }
 
 .focus\:border-gray-100:focus {
@@ -4622,7 +4650,7 @@ video {
 }
 
 .font-sans {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
@@ -6991,6 +7019,22 @@ video {
   color: #fff;
 }
 
+.placeholder-onandoffSelection::-webkit-input-placeholder {
+  color: #85f7da;
+}
+
+.placeholder-onandoffSelection:-ms-input-placeholder {
+  color: #85f7da;
+}
+
+.placeholder-onandoffSelection::-ms-input-placeholder {
+  color: #85f7da;
+}
+
+.placeholder-onandoffSelection::placeholder {
+  color: #85f7da;
+}
+
 .placeholder-gray-100::-webkit-input-placeholder {
   color: #f7fafc;
 }
@@ -8493,6 +8537,22 @@ video {
 
 .focus\:placeholder-white:focus::placeholder {
   color: #fff;
+}
+
+.focus\:placeholder-onandoffSelection:focus::-webkit-input-placeholder {
+  color: #85f7da;
+}
+
+.focus\:placeholder-onandoffSelection:focus:-ms-input-placeholder {
+  color: #85f7da;
+}
+
+.focus\:placeholder-onandoffSelection:focus::-ms-input-placeholder {
+  color: #85f7da;
+}
+
+.focus\:placeholder-onandoffSelection:focus::placeholder {
+  color: #85f7da;
 }
 
 .focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
@@ -10226,6 +10286,10 @@ video {
   color: #fff;
 }
 
+.text-onandoffSelection {
+  color: #85f7da;
+}
+
 .text-gray-100 {
   color: #f7fafc;
 }
@@ -10602,6 +10666,10 @@ video {
   color: #fff;
 }
 
+.hover\:text-onandoffSelection:hover {
+  color: #85f7da;
+}
+
 .hover\:text-gray-100:hover {
   color: #f7fafc;
 }
@@ -10976,6 +11044,10 @@ video {
 
 .focus\:text-white:focus {
   color: #fff;
+}
+
+.focus\:text-onandoffSelection:focus {
+  color: #85f7da;
 }
 
 .focus\:text-gray-100:focus {
@@ -14208,12 +14280,16 @@ video {
 }
 
 body {
+  font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #85f7da;
+  color: #000;
 }
 
 code {
@@ -14762,6 +14838,10 @@ code {
     border-color: #fff;
   }
 
+  .sm\:divide-onandoffSelection > :not(template) ~ :not(template) {
+    border-color: #85f7da;
+  }
+
   .sm\:divide-gray-100 > :not(template) ~ :not(template) {
     border-color: #f7fafc;
   }
@@ -15202,6 +15282,10 @@ code {
     background-color: #fff;
   }
 
+  .sm\:bg-onandoffSelection {
+    background-color: #85f7da;
+  }
+
   .sm\:bg-gray-100 {
     background-color: #f7fafc;
   }
@@ -15578,6 +15662,10 @@ code {
     background-color: #fff;
   }
 
+  .sm\:hover\:bg-onandoffSelection:hover {
+    background-color: #85f7da;
+  }
+
   .sm\:hover\:bg-gray-100:hover {
     background-color: #f7fafc;
   }
@@ -15952,6 +16040,10 @@ code {
 
   .sm\:focus\:bg-white:focus {
     background-color: #fff;
+  }
+
+  .sm\:focus\:bg-onandoffSelection:focus {
+    background-color: #85f7da;
   }
 
   .sm\:focus\:bg-gray-100:focus {
@@ -16410,6 +16502,10 @@ code {
     border-color: #fff;
   }
 
+  .sm\:border-onandoffSelection {
+    border-color: #85f7da;
+  }
+
   .sm\:border-gray-100 {
     border-color: #f7fafc;
   }
@@ -16786,6 +16882,10 @@ code {
     border-color: #fff;
   }
 
+  .sm\:hover\:border-onandoffSelection:hover {
+    border-color: #85f7da;
+  }
+
   .sm\:hover\:border-gray-100:hover {
     border-color: #f7fafc;
   }
@@ -17160,6 +17260,10 @@ code {
 
   .sm\:focus\:border-white:focus {
     border-color: #fff;
+  }
+
+  .sm\:focus\:border-onandoffSelection:focus {
+    border-color: #85f7da;
   }
 
   .sm\:focus\:border-gray-100:focus {
@@ -18229,7 +18333,7 @@ code {
   }
 
   .sm\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
@@ -20598,6 +20702,22 @@ code {
     color: #fff;
   }
 
+  .sm\:placeholder-onandoffSelection::-webkit-input-placeholder {
+    color: #85f7da;
+  }
+
+  .sm\:placeholder-onandoffSelection:-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .sm\:placeholder-onandoffSelection::-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .sm\:placeholder-onandoffSelection::placeholder {
+    color: #85f7da;
+  }
+
   .sm\:placeholder-gray-100::-webkit-input-placeholder {
     color: #f7fafc;
   }
@@ -22100,6 +22220,22 @@ code {
 
   .sm\:focus\:placeholder-white:focus::placeholder {
     color: #fff;
+  }
+
+  .sm\:focus\:placeholder-onandoffSelection:focus::-webkit-input-placeholder {
+    color: #85f7da;
+  }
+
+  .sm\:focus\:placeholder-onandoffSelection:focus:-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .sm\:focus\:placeholder-onandoffSelection:focus::-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .sm\:focus\:placeholder-onandoffSelection:focus::placeholder {
+    color: #85f7da;
   }
 
   .sm\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
@@ -23833,6 +23969,10 @@ code {
     color: #fff;
   }
 
+  .sm\:text-onandoffSelection {
+    color: #85f7da;
+  }
+
   .sm\:text-gray-100 {
     color: #f7fafc;
   }
@@ -24209,6 +24349,10 @@ code {
     color: #fff;
   }
 
+  .sm\:hover\:text-onandoffSelection:hover {
+    color: #85f7da;
+  }
+
   .sm\:hover\:text-gray-100:hover {
     color: #f7fafc;
   }
@@ -24583,6 +24727,10 @@ code {
 
   .sm\:focus\:text-white:focus {
     color: #fff;
+  }
+
+  .sm\:focus\:text-onandoffSelection:focus {
+    color: #85f7da;
   }
 
   .sm\:focus\:text-gray-100:focus {
@@ -28352,6 +28500,10 @@ code {
     border-color: #fff;
   }
 
+  .md\:divide-onandoffSelection > :not(template) ~ :not(template) {
+    border-color: #85f7da;
+  }
+
   .md\:divide-gray-100 > :not(template) ~ :not(template) {
     border-color: #f7fafc;
   }
@@ -28792,6 +28944,10 @@ code {
     background-color: #fff;
   }
 
+  .md\:bg-onandoffSelection {
+    background-color: #85f7da;
+  }
+
   .md\:bg-gray-100 {
     background-color: #f7fafc;
   }
@@ -29168,6 +29324,10 @@ code {
     background-color: #fff;
   }
 
+  .md\:hover\:bg-onandoffSelection:hover {
+    background-color: #85f7da;
+  }
+
   .md\:hover\:bg-gray-100:hover {
     background-color: #f7fafc;
   }
@@ -29542,6 +29702,10 @@ code {
 
   .md\:focus\:bg-white:focus {
     background-color: #fff;
+  }
+
+  .md\:focus\:bg-onandoffSelection:focus {
+    background-color: #85f7da;
   }
 
   .md\:focus\:bg-gray-100:focus {
@@ -30000,6 +30164,10 @@ code {
     border-color: #fff;
   }
 
+  .md\:border-onandoffSelection {
+    border-color: #85f7da;
+  }
+
   .md\:border-gray-100 {
     border-color: #f7fafc;
   }
@@ -30376,6 +30544,10 @@ code {
     border-color: #fff;
   }
 
+  .md\:hover\:border-onandoffSelection:hover {
+    border-color: #85f7da;
+  }
+
   .md\:hover\:border-gray-100:hover {
     border-color: #f7fafc;
   }
@@ -30750,6 +30922,10 @@ code {
 
   .md\:focus\:border-white:focus {
     border-color: #fff;
+  }
+
+  .md\:focus\:border-onandoffSelection:focus {
+    border-color: #85f7da;
   }
 
   .md\:focus\:border-gray-100:focus {
@@ -31819,7 +31995,7 @@ code {
   }
 
   .md\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
@@ -34188,6 +34364,22 @@ code {
     color: #fff;
   }
 
+  .md\:placeholder-onandoffSelection::-webkit-input-placeholder {
+    color: #85f7da;
+  }
+
+  .md\:placeholder-onandoffSelection:-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .md\:placeholder-onandoffSelection::-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .md\:placeholder-onandoffSelection::placeholder {
+    color: #85f7da;
+  }
+
   .md\:placeholder-gray-100::-webkit-input-placeholder {
     color: #f7fafc;
   }
@@ -35690,6 +35882,22 @@ code {
 
   .md\:focus\:placeholder-white:focus::placeholder {
     color: #fff;
+  }
+
+  .md\:focus\:placeholder-onandoffSelection:focus::-webkit-input-placeholder {
+    color: #85f7da;
+  }
+
+  .md\:focus\:placeholder-onandoffSelection:focus:-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .md\:focus\:placeholder-onandoffSelection:focus::-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .md\:focus\:placeholder-onandoffSelection:focus::placeholder {
+    color: #85f7da;
   }
 
   .md\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
@@ -37423,6 +37631,10 @@ code {
     color: #fff;
   }
 
+  .md\:text-onandoffSelection {
+    color: #85f7da;
+  }
+
   .md\:text-gray-100 {
     color: #f7fafc;
   }
@@ -37799,6 +38011,10 @@ code {
     color: #fff;
   }
 
+  .md\:hover\:text-onandoffSelection:hover {
+    color: #85f7da;
+  }
+
   .md\:hover\:text-gray-100:hover {
     color: #f7fafc;
   }
@@ -38173,6 +38389,10 @@ code {
 
   .md\:focus\:text-white:focus {
     color: #fff;
+  }
+
+  .md\:focus\:text-onandoffSelection:focus {
+    color: #85f7da;
   }
 
   .md\:focus\:text-gray-100:focus {
@@ -41942,6 +42162,10 @@ code {
     border-color: #fff;
   }
 
+  .lg\:divide-onandoffSelection > :not(template) ~ :not(template) {
+    border-color: #85f7da;
+  }
+
   .lg\:divide-gray-100 > :not(template) ~ :not(template) {
     border-color: #f7fafc;
   }
@@ -42382,6 +42606,10 @@ code {
     background-color: #fff;
   }
 
+  .lg\:bg-onandoffSelection {
+    background-color: #85f7da;
+  }
+
   .lg\:bg-gray-100 {
     background-color: #f7fafc;
   }
@@ -42758,6 +42986,10 @@ code {
     background-color: #fff;
   }
 
+  .lg\:hover\:bg-onandoffSelection:hover {
+    background-color: #85f7da;
+  }
+
   .lg\:hover\:bg-gray-100:hover {
     background-color: #f7fafc;
   }
@@ -43132,6 +43364,10 @@ code {
 
   .lg\:focus\:bg-white:focus {
     background-color: #fff;
+  }
+
+  .lg\:focus\:bg-onandoffSelection:focus {
+    background-color: #85f7da;
   }
 
   .lg\:focus\:bg-gray-100:focus {
@@ -43590,6 +43826,10 @@ code {
     border-color: #fff;
   }
 
+  .lg\:border-onandoffSelection {
+    border-color: #85f7da;
+  }
+
   .lg\:border-gray-100 {
     border-color: #f7fafc;
   }
@@ -43966,6 +44206,10 @@ code {
     border-color: #fff;
   }
 
+  .lg\:hover\:border-onandoffSelection:hover {
+    border-color: #85f7da;
+  }
+
   .lg\:hover\:border-gray-100:hover {
     border-color: #f7fafc;
   }
@@ -44340,6 +44584,10 @@ code {
 
   .lg\:focus\:border-white:focus {
     border-color: #fff;
+  }
+
+  .lg\:focus\:border-onandoffSelection:focus {
+    border-color: #85f7da;
   }
 
   .lg\:focus\:border-gray-100:focus {
@@ -45409,7 +45657,7 @@ code {
   }
 
   .lg\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
@@ -47778,6 +48026,22 @@ code {
     color: #fff;
   }
 
+  .lg\:placeholder-onandoffSelection::-webkit-input-placeholder {
+    color: #85f7da;
+  }
+
+  .lg\:placeholder-onandoffSelection:-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .lg\:placeholder-onandoffSelection::-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .lg\:placeholder-onandoffSelection::placeholder {
+    color: #85f7da;
+  }
+
   .lg\:placeholder-gray-100::-webkit-input-placeholder {
     color: #f7fafc;
   }
@@ -49280,6 +49544,22 @@ code {
 
   .lg\:focus\:placeholder-white:focus::placeholder {
     color: #fff;
+  }
+
+  .lg\:focus\:placeholder-onandoffSelection:focus::-webkit-input-placeholder {
+    color: #85f7da;
+  }
+
+  .lg\:focus\:placeholder-onandoffSelection:focus:-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .lg\:focus\:placeholder-onandoffSelection:focus::-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .lg\:focus\:placeholder-onandoffSelection:focus::placeholder {
+    color: #85f7da;
   }
 
   .lg\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
@@ -51013,6 +51293,10 @@ code {
     color: #fff;
   }
 
+  .lg\:text-onandoffSelection {
+    color: #85f7da;
+  }
+
   .lg\:text-gray-100 {
     color: #f7fafc;
   }
@@ -51389,6 +51673,10 @@ code {
     color: #fff;
   }
 
+  .lg\:hover\:text-onandoffSelection:hover {
+    color: #85f7da;
+  }
+
   .lg\:hover\:text-gray-100:hover {
     color: #f7fafc;
   }
@@ -51763,6 +52051,10 @@ code {
 
   .lg\:focus\:text-white:focus {
     color: #fff;
+  }
+
+  .lg\:focus\:text-onandoffSelection:focus {
+    color: #85f7da;
   }
 
   .lg\:focus\:text-gray-100:focus {
@@ -55532,6 +55824,10 @@ code {
     border-color: #fff;
   }
 
+  .xl\:divide-onandoffSelection > :not(template) ~ :not(template) {
+    border-color: #85f7da;
+  }
+
   .xl\:divide-gray-100 > :not(template) ~ :not(template) {
     border-color: #f7fafc;
   }
@@ -55972,6 +56268,10 @@ code {
     background-color: #fff;
   }
 
+  .xl\:bg-onandoffSelection {
+    background-color: #85f7da;
+  }
+
   .xl\:bg-gray-100 {
     background-color: #f7fafc;
   }
@@ -56348,6 +56648,10 @@ code {
     background-color: #fff;
   }
 
+  .xl\:hover\:bg-onandoffSelection:hover {
+    background-color: #85f7da;
+  }
+
   .xl\:hover\:bg-gray-100:hover {
     background-color: #f7fafc;
   }
@@ -56722,6 +57026,10 @@ code {
 
   .xl\:focus\:bg-white:focus {
     background-color: #fff;
+  }
+
+  .xl\:focus\:bg-onandoffSelection:focus {
+    background-color: #85f7da;
   }
 
   .xl\:focus\:bg-gray-100:focus {
@@ -57180,6 +57488,10 @@ code {
     border-color: #fff;
   }
 
+  .xl\:border-onandoffSelection {
+    border-color: #85f7da;
+  }
+
   .xl\:border-gray-100 {
     border-color: #f7fafc;
   }
@@ -57556,6 +57868,10 @@ code {
     border-color: #fff;
   }
 
+  .xl\:hover\:border-onandoffSelection:hover {
+    border-color: #85f7da;
+  }
+
   .xl\:hover\:border-gray-100:hover {
     border-color: #f7fafc;
   }
@@ -57930,6 +58246,10 @@ code {
 
   .xl\:focus\:border-white:focus {
     border-color: #fff;
+  }
+
+  .xl\:focus\:border-onandoffSelection:focus {
+    border-color: #85f7da;
   }
 
   .xl\:focus\:border-gray-100:focus {
@@ -58999,7 +59319,7 @@ code {
   }
 
   .xl\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
@@ -61368,6 +61688,22 @@ code {
     color: #fff;
   }
 
+  .xl\:placeholder-onandoffSelection::-webkit-input-placeholder {
+    color: #85f7da;
+  }
+
+  .xl\:placeholder-onandoffSelection:-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .xl\:placeholder-onandoffSelection::-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .xl\:placeholder-onandoffSelection::placeholder {
+    color: #85f7da;
+  }
+
   .xl\:placeholder-gray-100::-webkit-input-placeholder {
     color: #f7fafc;
   }
@@ -62870,6 +63206,22 @@ code {
 
   .xl\:focus\:placeholder-white:focus::placeholder {
     color: #fff;
+  }
+
+  .xl\:focus\:placeholder-onandoffSelection:focus::-webkit-input-placeholder {
+    color: #85f7da;
+  }
+
+  .xl\:focus\:placeholder-onandoffSelection:focus:-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .xl\:focus\:placeholder-onandoffSelection:focus::-ms-input-placeholder {
+    color: #85f7da;
+  }
+
+  .xl\:focus\:placeholder-onandoffSelection:focus::placeholder {
+    color: #85f7da;
   }
 
   .xl\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
@@ -64603,6 +64955,10 @@ code {
     color: #fff;
   }
 
+  .xl\:text-onandoffSelection {
+    color: #85f7da;
+  }
+
   .xl\:text-gray-100 {
     color: #f7fafc;
   }
@@ -64979,6 +65335,10 @@ code {
     color: #fff;
   }
 
+  .xl\:hover\:text-onandoffSelection:hover {
+    color: #85f7da;
+  }
+
   .xl\:hover\:text-gray-100:hover {
     color: #f7fafc;
   }
@@ -65353,6 +65713,10 @@ code {
 
   .xl\:focus\:text-white:focus {
     color: #fff;
+  }
+
+  .xl\:focus\:text-onandoffSelection:focus {
+    color: #85f7da;
   }
 
   .xl\:focus\:text-gray-100:focus {
