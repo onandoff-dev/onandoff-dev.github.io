@@ -7,7 +7,7 @@ import './styles/tailwind.css';
 
 function App() {
     return (
-        <div className="mx-auto flex flex-col onandoff-hero-bg min-h-screen">
+        <div className="mx-auto flex flex-col bg-black min-h-screen">
             <nav className="bg-black px-4 sm:px-0">
                 <div className="flex flex-row container items-center justify-between mx-auto my-2">
                     <motion.img
@@ -23,7 +23,7 @@ function App() {
                     />
                     <div className="flex flex-row">
                         <motion.a
-                            className="text-white ml-2 text-base font-normal font-sans leading-loose tracking-tight"
+                            className="ml-2 text-base font-normal font-sans leading-loose tracking-tight"
                             href="mailto:contact@onandoff.io"
                             whileHover={{scale: 1.2}}
                             whileTap={{scale: 0.9}}
@@ -31,7 +31,7 @@ function App() {
                             <img src={email} className="rounded-sm h-8" alt="email"/>
                         </motion.a>
                         <motion.a
-                            className="text-white ml-2 text-base font-normal font-sans leading-loose tracking-tight"
+                            className="ml-2 text-base font-normal font-sans leading-loose tracking-tight"
                             href="https://github.com/onandoff-dev/"
                             whileHover={{scale: 1.2}}
                             whileTap={{scale: 0.9}}
@@ -42,11 +42,15 @@ function App() {
                 </div>
             </nav>
             <main className="flex container items-center justify-start flex-grow mx-auto">
-                <div className="flex flex-col px-4 sm:px-0">
-                    <p className="font-medium text-2xl leading-relaxed max-w-2xl">We are Software
+                <motion.div className="flex flex-col px-4 sm:px-0"
+                            initial={{scale: 0.5}}
+                            animate={{scale: 1}}
+                            transition={{duration: 0.5}}
+                >
+                    <p className="text-white font-medium text-2xl leading-relaxed max-w-2xl">We are Software
                         Engineers based in Munich specialising in app
-                        development, web development, design and deployment across all platforms.</p>
-                </div>
+                        development, web development, ux design and deployment across all platforms.</p>
+                </motion.div>
             </main>
             <footer className="flex flex-row w-full">
 
