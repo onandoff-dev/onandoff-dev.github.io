@@ -1,5 +1,4 @@
 <svg width="300" height="300" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h300v300H0V0z" fill="#000"/>
     <path d="M200 225c13.807 0 25-11.193 25-25s-11.193-25-25-25-25 11.193-25 25 11.193 25 25 25zM100 125c13.807 0 25-11.193 25-25s-11.193-25-25-25-25 11.193-25 25 11.193 25 25 25zM158.333 100h25A16.668 16.668 0 01200 116.667V175M100 125v100"
-          stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+          stroke="#000" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
