@@ -3,6 +3,7 @@ import logo from './images/logo-bg-white.svg';
 import github from './images/github.svg';
 import email from './images/email.svg';
 import {motion} from "framer-motion";
+import {LinkWithSound} from "./components/LinkWithSound";
 import './styles/tailwind.css';
 
 function App() {
@@ -22,22 +23,12 @@ function App() {
                         }}
                     />
                     <div className="flex flex-row">
-                        <motion.a
-                            className="ml-2 text-base font-normal font-sans leading-loose tracking-tight"
-                            href="mailto:contact@onandoff.io"
-                            whileHover={{scale: 1.2}}
-                            whileTap={{scale: 0.9}}
-                        >
+                        <LinkWithSound css="ml-2 text-base font-normal font-sans leading-loose tracking-tight" href="mailto:contact@onandoff.io">
                             <img src={email} className="rounded-sm h-8" alt="email"/>
-                        </motion.a>
-                        <motion.a
-                            className="ml-2 text-base font-normal font-sans leading-loose tracking-tight"
-                            href="https://github.com/onandoff-dev/"
-                            whileHover={{scale: 1.2}}
-                            whileTap={{scale: 0.9}}
-                        >
+                        </LinkWithSound>
+                        <LinkWithSound css="ml-2 text-base font-normal font-sans leading-loose tracking-tight" href="https://github.com/onandoff-dev/">
                             <img src={github} className="rounded-sm h-8" alt="github"/>
-                        </motion.a>
+                        </LinkWithSound>
                     </div>
                 </div>
             </nav>
